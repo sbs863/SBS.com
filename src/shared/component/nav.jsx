@@ -22,7 +22,7 @@ const Nav = () =>
       <span className="navbar-toggler-icon" />
     </button>
     <Link to={HOME_PAGE_ROUTE} className="navbar-brand">{APP_NAME}</Link>
-    <div className="js-navbar-collapse collapse navbar-collapse">
+    <div className="js-navbar-collapse collapse navbar-collapse navBarLinks">
       <ul className="navbar-nav mr-auto">
         {[
           { route: HOME_PAGE_ROUTE, label: 'Home' },
