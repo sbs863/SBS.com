@@ -4,6 +4,7 @@ import React from 'react'
 import { Switch } from 'react-router'
 import { Route } from 'react-router-dom'
 import Helmet from 'react-helmet'
+// import injectSheet from 'react-jss'
 
 import HelloPage from './component/page/hello'
 import HelloAsyncPage from './component/page/hello-async'
@@ -19,7 +20,7 @@ import {
 } from './routes'
 
 const App = () =>
-  <div style={{ paddingTop: 54 }}>
+  <div style={{ paddingTop: 54, height: '100%' }}>
     <Helmet titleTemplate={`%s | ${APP_NAME}`} defaultTitle={APP_NAME} />
     <Nav />
     <Switch>
