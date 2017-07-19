@@ -9,7 +9,7 @@ import {
 
 import {
   HOME_PAGE_ROUTE,
-  HELLO_PAGE_ROUTE,
+  ABOUT_PAGE_ROUTE,
   HELLO_ASYNC_PAGE_ROUTE,
   helloEndpointRoute,
 } from '../shared/routes'
@@ -21,7 +21,7 @@ export default (app: Object) => {
     res.send(renderApp(req.url, homePage()))
   })
 
-  app.get(HELLO_PAGE_ROUTE, (req, res) => {
+  app.get(ABOUT_PAGE_ROUTE, (req, res) => {
     res.send(renderApp(req.url, helloPage()))
   })
 

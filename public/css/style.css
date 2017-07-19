@@ -3,8 +3,12 @@ html, body, .root{
     height: 100%;
 }
 
-.test {
-    margin:0;
+h1 {
+    text-align: center;
+}
+
+.home {
+    /*margin:0;*/
     height: 100%;
     background: url(../images/home2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;

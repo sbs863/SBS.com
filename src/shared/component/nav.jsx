@@ -3,10 +3,10 @@
 import $ from 'jquery'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { APP_NAME } from '../config'
+import Logo from './logo'
 import {
   HOME_PAGE_ROUTE,
-  HELLO_PAGE_ROUTE,
+  ABOUT_PAGE_ROUTE,
   HELLO_ASYNC_PAGE_ROUTE,
 } from '../routes'
 
@@ -16,20 +16,22 @@ const handleNavLinkClick = () => {
 }
 
 const Nav = () =>
-  <nav className="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-    <button className="navbar-toggler navbar-toggler-right" type="button" role="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+  <nav className="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" style={{ backgroundColor: 'white' }} >
+    <button className="navbar-toggler navbar-toggler-right" type="button" role="button" data-toggle="collapse" data-target=".js-navbar-collapse" >
       <span className="navbar-toggler-icon" />
     </button>
-    <Link to={HOME_PAGE_ROUTE} className="navbar-brand">{APP_NAME}</Link>
-    <div className="js-navbar-collapse collapse navbar-collapse navBarLinks">
-      <ul className="navbar-nav mr-auto">
+    <Link to={HOME_PAGE_ROUTE} >
+      <Logo />
+    </Link>
+    <div className="js-navbar-collapse collapse navbar-collapse navBarLinks" >
+      <ul className="navbar-nav mr-auto" >
         {[
           { route: HOME_PAGE_ROUTE, label: 'Home' },
-          { route: HELLO_PAGE_ROUTE, label: 'Say Hello' },
+          { route: ABOUT_PAGE_ROUTE, label: 'About' },
           { route: HELLO_ASYNC_PAGE_ROUTE, label: 'Say Hello Asynchronously' },
         ].map(link => (
-          <li className="nav-item" key={link.route}>
-            <NavLink to={link.route} className="nav-link" activeStyle={{ color: 'white' }} exact onClick={handleNavLinkClick}>{link.label}</NavLink>
+          <li className="nav-item" key={link.route} >
+            <NavLink to={link.route} className="nav-link" activeStyle={{ color: 'red' }} exact onClick={handleNavLinkClick} >{link.label}</NavLink>
           </li>
         ))}
       </ul>

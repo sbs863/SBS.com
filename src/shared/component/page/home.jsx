@@ -23,39 +23,30 @@ const styles = {
     backgroundColor: 'limegreen',
   },
 }
-
-const HomePage = ({ classes }: { classes: Object }) =>
-  <div className="test" >
+// { classes }: { classes: Object }
+const HomePage = () =>
+  <div className="home" >
     <div>
       <Helmet
         meta={[
-          { name: 'description', content: 'Hello App is an app to say hello' },
+          { name: 'description', content: "You're looking at my source code!!! I'm so embarrassed" },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
           { property: 'og:title', content: APP_NAME },
         ]}
       />
-      <div className="jumbotron" >
-        <div className="container" >
-          <h1 className="display-3 mb-8" >{APP_NAME}</h1>
-        </div>
-      </div>
       <div className="container" >
-        <div className="row" >
-          <div className="col-md-4 mb-4" >
-            <h3 className="mb-3" >Bootstrap</h3>
-            <p>
-              <button type="button" role="button" data-toggle="modal" data-target=".js-modal-example" className="btn btn-primary" >Open Modal</button>
-            </p>
+        <div className="row justify-content-md-center align-items-center" >
+          <div className="col-sm-7 mb-4" >
+            <div className="card" style={{ width: '40rem' }} >
+              <img className="card-img-top" src="..." alt="Card" />
+              <div className="card-block" >
+                <h4 className="card-title" >Card title</h4>
+                <p className="card-text" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" role="button" data-toggle="modal" data-target=".js-modal-example" className="btn btn-primary" >Open Modal</button>
+              </div>
+            </div>
           </div>
-          <div className="col-md-4 mb-4" >
-            <h3 className="mb-3" >JSS</h3>
-            <p className={classes.hoverMe} >Hover me.</p>
-            <p className={classes.resizeMe} >Resize the window.</p>
-            <button className={classes.specialButton} >Composition</button>
-          </div>
-          <div className="col-md-4 mb-4" >
-            <h3 className="mb-3" >Websockets</h3>
-            <p>Open your browser console.</p>
-          </div>
+          <div className="col-sm-5 mb-4" />
         </div>
       </div>
       <ModalExample />
