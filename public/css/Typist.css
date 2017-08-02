@@ -1,0 +1,33 @@
+.Typist {
+  font-size: 5em;
+}
+.Typist .Cursor {
+  display: inline-block; }
+  .Typist .Cursor--blinking {
+    color: orange;
+    opacity: 1;
+    animation: blink 1s linear infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+  .Typist {
+    font-size: 2em;
+  }
+  .Typist .Cursor {
+      display: inline-block; }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+    .Typist {
+        font-size: 3.5em;
+    }
+    .Typist .Cursor {
+        display: inline-block; }
+}

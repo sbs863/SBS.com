@@ -34,6 +34,7 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
         <link rel="stylesheet" href="${STATIC_PATH}/css/reset.css">
         <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
         <link rel="stylesheet" href="${STATIC_PATH}/css/font-awesome/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="${STATIC_PATH}/css/Typist.css">
         <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
         <style class="${JSS_SSR_CLASS}">${sheets.toString()}</style>
       </head>

@@ -4305,7 +4305,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.6:
+prop-types@^15.5.10, prop-types@^15.5.6:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -4486,6 +4486,12 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^0.2.2"
+
+react-typist@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-typist/-/react-typist-1.1.1.tgz#3b651f8c89ce240f80afbd63038c1bcb113accf4"
+  dependencies:
+    prop-types "^15.5.10"
 
 react@^15.4.2:
   version "15.4.2"

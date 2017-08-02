@@ -1,18 +1,58 @@
-html, body, .root{
-    margin:0;
+html, body, .root {
+    margin: 0;
     height: 100%;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
 }
 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .js-navbar-collapse .collapse .navbar-collapse .navBarLinks {
+        display: inline-flex;
+    }
+}
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .test {
+        display:flex;
+        flex-direction: row;
+    }
+    .nav-item {
+        width: 125px;
+    }
+    .responsiveNavPages {
+        display: flex;
+        text-align: center;
+    }
+    .responsiveNavLinks {
+        padding-top: 20px;
+    }
+    .ml-auto {
+        margin-left: 4rem !important;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
 

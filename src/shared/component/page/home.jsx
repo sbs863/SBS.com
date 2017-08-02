@@ -2,6 +2,7 @@
 
 import React from 'react'
 import injectSheet from 'react-jss'
+import Typed from '../typed'
 
 // import ModalExample from '../modal-example'
 import { STATIC_PATH } from '../../config'
@@ -26,27 +27,13 @@ const styles = {
     gridArea: 'greeting',
     color: 'white',
   },
-  typewriter: {
-    overflow: 'hidden',
-    borderRight: '.15em solid orange',
-    whiteSpace: 'nowrap',
-    margin: '0 auto',
-    letterSpacing: '.1em',
-    animation: 'typing 2s steps(16, end), blink-caret .75s step-end infinite',
-  },
 }
 const HomePage = ({ classes }: { classes: Object }) =>
   <div className={classes.background} >
     <div className={classes.welcome} >
       <div className={classes.top} >
-        <div className="container-fluid" >
-          <div className="row" >
-            <div>
-              <h2 className={classes.typewriter} >
-                Hello World
-              </h2>
-            </div>
-          </div>
+        <div>
+          <Typed />
         </div>
       </div>
     </div>
