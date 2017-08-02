@@ -11,7 +11,7 @@ const styles = {
     position: 'absolute',
     bottom: '0',
     width: '100%',
-    height: '15%',
+    height: '5%',
     backgroundColor: 'rgb(41,43,44)',
     display: 'flex',
     flexDirection: 'row',
@@ -24,13 +24,6 @@ const styles = {
 const Footer = ({ classes }: { classes: Object }) =>
   <div className={classes.container} >
     <footer>
-      <FontAwesome
-        className="super-crazy-colors"
-        name="rocket"
-        size="2x"
-        spin
-        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-      />
       © {APP_NAME} { moment().format('YYYY') }
     </footer>
   </div>

@@ -3341,14 +3341,14 @@ jss-camel-case@^3.0.0:
   resolved "https://registry.yarnpkg.com/jss-camel-case/-/jss-camel-case-3.0.0.tgz#46aa18eb149e95afce074532ad47df1c2a7d45cb"
 
 jss-compose@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/jss-compose/-/jss-compose-2.0.1.tgz#df881ac1fe310b49bab4ad4229b32abc69b3ee6f"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/jss-compose/-/jss-compose-2.1.0.tgz#3751d613fb61c715e3d91140dea5f1794968847d"
   dependencies:
     warning "^3.0.0"
 
 jss-default-unit@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-5.0.2.tgz#c4d7fd957cb41baab0b4cb37f92016aa1db08667"
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-5.0.3.tgz#b9450f31c37feaed3151554b2938363974780af1"
 
 jss-expand@^2.0.3:
   version "2.1.0"
@@ -4440,8 +4440,8 @@ react-hot-loader@^3.0.0-beta.6:
     source-map "^0.4.4"
 
 react-jss@^5.3.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-5.4.0.tgz#7e2bbe329358ab00816aa9f62ccbc4a9bab2ad2c"
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-5.4.1.tgz#96670fdab022c1e79928e530a482f67b0d82fc5b"
   dependencies:
     hoist-non-react-statics "^1.2.0"
     jss "^6.5.0"

@@ -16,9 +16,9 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
   const store = initStore(plainPartialState)
   const sheets = new SheetsRegistry()
   const appHtml = ReactDOMServer.renderToString(
-    <Provider store={store}>
-      <StaticRouter location={location} context={routerContext}>
-        <SheetsRegistryProvider registry={sheets}>
+    <Provider store={store} >
+      <StaticRouter location={location} context={routerContext} >
+        <SheetsRegistryProvider registry={sheets} >
           <App />
         </SheetsRegistryProvider>
       </StaticRouter>
@@ -33,8 +33,8 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
         ${head.meta}
         <link rel="stylesheet" href="${STATIC_PATH}/css/reset.css">
         <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
-        <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
         <link rel="stylesheet" href="${STATIC_PATH}/css/font-awesome/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
         <style class="${JSS_SSR_CLASS}">${sheets.toString()}</style>
       </head>
       <body>

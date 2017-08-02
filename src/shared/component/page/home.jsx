@@ -4,52 +4,53 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 
-import ModalExample from '../modal-example'
-import { APP_NAME } from '../../config'
+// import ModalExample from '../modal-example'
+import { APP_NAME, STATIC_PATH } from '../../config'
 
 const styles = {
-  hoverMe: {
-    '&:hover': {
-      color: 'red',
-    },
+  background: {
+    background: `url(${STATIC_PATH}/images/home2.jpg) no-repeat center center fixed`,
+    height: '100%',
+    backgroundSize: 'cover',
+    webkitBackgroundSize: 'cover',
+    mozBackgroundSize: 'cover',
+    oBackgroundSize: 'cover',
   },
-  '@media (max-width: 800px)': {
-    resizeMe: {
-      color: 'red',
-    },
+  welcome: {
+    display: 'grid',
+    minHeight: '100%',
+    gridTemplateColumns: '1fr 1fr 1fr%',
+    gridTemplateRows: '1fr 1fr 1fr',
+    gridTemplateAreas: "'. . .' '. . greeting' '. . .'",
   },
-  specialButton: {
-    composes: ['btn', 'btn-primary'],
-    backgroundColor: 'limegreen',
+  top: {
+    gridArea: 'greeting',
+    color: 'white',
+  },
+  typewriter: {
+    overflow: 'hidden',
+    borderRight: '.15em solid orange',
+    whiteSpace: 'nowrap',
+    margin: '0 auto',
+    letterSpacing: '.1em',
+    animation: 'typing 2s steps(16, end), blink-caret .75s step-end infinite',
   },
 }
-// { classes }: { classes: Object }
-const HomePage = () =>
-  <div className="home" >
-    <div>
-      <Helmet
-        meta={[
-          { name: 'description', content: "You're looking at my source code!!! I'm so embarrassed" },
-          { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-          { property: 'og:title', content: APP_NAME },
-        ]}
-      />
-      <div className="container" >
-        <div className="row justify-content-md-center align-items-center" >
-          <div className="col-sm-7 mb-4" >
-            <div className="card" style={{ width: '40rem' }} >
-              <img className="card-img-top" src="..." alt="Card" />
-              <div className="card-block" >
-                <h4 className="card-title" >Card title</h4>
-                <p className="card-text" >Some quick example text to build on the card title and make up the bulk of the card&#39;s content.</p>
-                <button type="button" role="button" data-toggle="modal" data-target=".js-modal-example" className="btn btn-primary" >Open Modal</button>
-              </div>
+const HomePage = ({ classes }: { classes: Object }) =>
+  <div className={classes.background} >
+    <div className={classes.welcome} >
+      <div className={classes.top} >
+        <div className="container-fluid" >
+          <div className="row" >
+            <div>
+              <h2 className={classes.typewriter} >
+                Hello World
+              </h2>
             </div>
           </div>
-          <div className="col-sm-5 mb-4" />
         </div>
       </div>
-      <ModalExample />
     </div>
   </div>
+
 export default injectSheet(styles)(HomePage)
