@@ -2,7 +2,6 @@
 
 import React from 'react'
 import moment from 'moment'
-import FontAwesome from 'react-fontawesome'
 import injectSheet from 'react-jss'
 import { APP_NAME } from '../config'
 

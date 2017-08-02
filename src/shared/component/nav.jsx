@@ -21,7 +21,7 @@ const Nav = () =>
     <button className="navbar-toggler navbar-toggler-right" type="button" role="button" data-toggle="collapse" data-target=".js-navbar-collapse" >
       <span className="navbar-toggler-icon" />
     </button>
-    <Link className="navbar-brand d-flex mr-auto " to={HOME_PAGE_ROUTE} style={{ width: '53%', outline: 'none' }} >
+    <Link className="navbar-brand d-flex mr-auto " to={HOME_PAGE_ROUTE} style={{ width: '49%', outline: 'none' }} >
       <Logo />
     </Link>
     <div className="js-navbar-collapse collapse navbar-collapse navBarLinks" >

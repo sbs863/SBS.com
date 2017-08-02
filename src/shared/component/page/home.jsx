@@ -1,11 +1,10 @@
 // @flow
 
 import React from 'react'
-import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 
 // import ModalExample from '../modal-example'
-import { APP_NAME, STATIC_PATH } from '../../config'
+import { STATIC_PATH } from '../../config'
 
 const styles = {
   background: {
