@@ -28,6 +28,7 @@ const styles = {
     color: 'white',
   },
 }
+
 const HomePage = ({ classes }: { classes: Object }) =>
   <div className={classes.background} >
     <div className={classes.welcome} >

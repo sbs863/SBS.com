@@ -2,28 +2,47 @@
 
 import React from 'react'
 import Helmet from 'react-helmet'
+import injectSheet from 'react-jss'
+import ModalExample from '../modal-example'
 
-import Message from '../../container/message'
-import HelloButton from '../../container/hello-button'
+const title = 'About Me'
 
-const title = 'Hello Page'
+const styles = {
+  summary: {
+    fontSize: '1.5em',
+    display: 'flex',
+    flexDirection: 'end',
+  },
+}
 
-const HelloPage = () =>
-  <div className="container mt-4">
+const HelloPage = ({ classes }: { classes: Object }) =>
+  <div className="container mt-4" >
     <Helmet
       title={title}
       meta={[
-        { name: 'description', content: 'A page to say hello' },
+        { name: 'description', content: 'A page about me!' },
         { property: 'og:title', content: title },
       ]}
     />
-    <div className="row">
-      <div className="col-12">
-        <h1>{title}</h1>
-        <Message />
-        <HelloButton />
+    <div className="row" >
+      <div className="col-12 justify-content-center d-flex flex-column" >
+        <h1 className="d-flex justify-content-center" >{title}</h1>
+        <p className={classes.summary} >
+          Thanks for taking the time to look at my work! Everyone hates writing about themselves,
+          I&#39;m no exception. I&#39;ll try to keep this brief so that you have more time to
+          explore this space. I graduated in 2013 from UT Austin with a BS in Environmental Science
+          and Sustainability. After a couple years in a comfortable yet dead end job, I decided to
+          embark on the road to becoming a full stack web developer. I&#39;m excactly two weeks in,
+          so please excuse the lack of content. Keep your eye on this page, it&#39;s sure to update
+          regularly!
+        </p>
+        <ModalExample />
+        <p>
+          <button type="button" role="button" data-toggle="modal" data-target=".js-modal-example" className="btn btn-primary" >Open Modal
+          </button>
+        </p>
       </div>
     </div>
   </div>
 
-export default HelloPage
+export default injectSheet(styles)(HelloPage)
