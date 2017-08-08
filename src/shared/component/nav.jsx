@@ -8,7 +8,7 @@ import Logo from './logo'
 import {
   HOME_PAGE_ROUTE,
   ABOUT_PAGE_ROUTE,
-  HELLO_ASYNC_PAGE_ROUTE,
+  PORTFOLIO_PAGE_ROUTE,
 } from '../routes'
 
 const handleNavLinkClick = () => {
@@ -32,7 +32,7 @@ const Nav = () =>
           {[
             { route: HOME_PAGE_ROUTE, label: 'Home' },
             { route: ABOUT_PAGE_ROUTE, label: 'About' },
-            { route: HELLO_ASYNC_PAGE_ROUTE, label: 'Portfolio' },
+            { route: PORTFOLIO_PAGE_ROUTE, label: 'Portfolio' },
           ].map(link => (
             <li className="nav-item" style={{ paddingLeft: '20px', paddingRight: '30px' }} key={link.route} >
               <NavLink to={link.route} className="nav-link" activeStyle={{ color: 'black', borderStyle: 'solid', borderColor: 'black', borderBottomWidth: '2px' }} exact onClick={handleNavLinkClick} >{link.label}</NavLink>
