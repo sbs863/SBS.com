@@ -5,3 +5,6 @@ node_modules/
 /lib/
 /dist/
 .idea/workspace.xml
+/src/shared/container
+/src/shared/reducer
+/src/shared/action

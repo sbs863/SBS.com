@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 // import injectSheet from 'react-jss'
 
 import HelloPage from './component/page/about'
-import HelloAsyncPage from './component/page/portfolio'
+import Portfolio from './component/page/portfolio'
 import HomePage from './component/page/home'
 import Footer from './component/footer'
 import Nav from './component/nav'
@@ -16,7 +16,7 @@ import { APP_NAME } from './config'
 import {
   HOME_PAGE_ROUTE,
   ABOUT_PAGE_ROUTE,
-  HELLO_ASYNC_PAGE_ROUTE,
+  PORTFOLIO_PAGE_ROUTE,
 } from './routes'
 
 const App = () =>
@@ -26,7 +26,7 @@ const App = () =>
     <Switch>
       <Route exact path={HOME_PAGE_ROUTE} render={() => <HomePage />} />
       <Route path={ABOUT_PAGE_ROUTE} render={() => <HelloPage />} />
-      <Route path={HELLO_ASYNC_PAGE_ROUTE} render={() => <HelloAsyncPage />} />
+      <Route path={PORTFOLIO_PAGE_ROUTE} render={() => <Portfolio />} />
       <Route component={NotFoundPage} />
     </Switch>
     <Footer />

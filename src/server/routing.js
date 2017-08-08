@@ -4,14 +4,12 @@ import {
   homePage,
   helloPage,
   helloAsyncPage,
-  helloEndpoint,
 } from './controller'
 
 import {
   HOME_PAGE_ROUTE,
   ABOUT_PAGE_ROUTE,
-  HELLO_ASYNC_PAGE_ROUTE,
-  helloEndpointRoute,
+  PORTFOLIO_PAGE_ROUTE,
 } from '../shared/routes'
 
 import renderApp from './render-app'
@@ -25,12 +23,8 @@ export default (app: Object) => {
     res.send(renderApp(req.url, helloPage()))
   })
 
-  app.get(HELLO_ASYNC_PAGE_ROUTE, (req, res) => {
+  app.get(PORTFOLIO_PAGE_ROUTE, (req, res) => {
     res.send(renderApp(req.url, helloAsyncPage()))
-  })
-
-  app.get(helloEndpointRoute(), (req, res) => {
-    res.json(helloEndpoint(req.params.num))
   })
 
   app.get('/500', () => {
