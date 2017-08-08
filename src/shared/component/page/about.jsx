@@ -3,7 +3,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
-import ModalExample from '../modal-example'
 
 const title = 'About Me'
 
@@ -35,11 +34,6 @@ const HelloPage = ({ classes }: { classes: Object }) =>
           embark on the road to becoming a full stack web developer. I&#39;m excactly two weeks in,
           so please excuse the lack of content. Keep your eye on this page, it&#39;s sure to update
           regularly!
-        </p>
-        <ModalExample />
-        <p>
-          <button type="button" role="button" data-toggle="modal" data-target=".js-modal-example" className="btn btn-primary" >Open Modal
-          </button>
         </p>
       </div>
     </div>

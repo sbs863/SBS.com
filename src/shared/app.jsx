@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 // import injectSheet from 'react-jss'
 
 import HelloPage from './component/page/about'
-import HelloAsyncPage from './component/page/hello-async'
+import HelloAsyncPage from './component/page/portfolio'
 import HomePage from './component/page/home'
 import Footer from './component/footer'
 import Nav from './component/nav'
