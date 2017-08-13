@@ -17,6 +17,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-around',
     color: 'rgb(255,255,255)',
+    fontSize: '1vw',
   },
 }
 

@@ -8,7 +8,7 @@ import Typed from '../typed'
 import { STATIC_PATH } from '../../config'
 
 const styles = {
-  background: {
+  image: {
     background: `url(${STATIC_PATH}/images/home2.jpg) no-repeat center center fixed`,
     height: '100%',
     backgroundSize: 'cover',
@@ -30,7 +30,7 @@ const styles = {
 }
 
 const HomePage = ({ classes }: { classes: Object }) =>
-  <div className={classes.background} >
+  <div className={classes.image} >
     <div className={classes.welcome} >
       <div className={classes.top} >
         <div>

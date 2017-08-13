@@ -8,7 +8,7 @@ const title = 'About Me'
 
 const styles = {
   summary: {
-    fontSize: '1.5em',
+    fontSize: '2vw',
     display: 'flex',
     flexDirection: 'end',
   },

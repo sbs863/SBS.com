@@ -3,6 +3,10 @@ html, body, .root {
     height: 100%;
 }
 
+h1 {
+    font-size: 3.75vw;
+}
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to {
