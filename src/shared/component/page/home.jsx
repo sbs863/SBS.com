@@ -29,7 +29,7 @@ const styles = {
     textAlign: 'center',
   },
   myDeal: {
-    hook: ["Now this is a story all about how", "My life got flipped-turned upside down", "And I'd like to take a minute", "Just sit right there", "I'll tell you how..."],
+    hook: ['Now this is a story all about how', 'My life got flipped-turned upside down', "And I'd like to take a minute", 'Just sit right there', "I'll tell you how..."],
     request: "I'd love to become a Junior Front End Software Engineer at Modernize",
     qualifications: {
       education: "Recent graduate from UT Austin's coding bootcamp",
@@ -38,7 +38,7 @@ const styles = {
         Experienced: ['MySQL', 'Linux'],
         Familiar: ['React Native', 'Angular2', 'Laravel', 'mongoDB'],
       },
-      passionateAbout: ['Taking things apart', 'Finding a better solution', 'Pattern recognition','Sustainability'],
+      passionateAbout: ['Taking things apart', 'Finding a better solution', 'Pattern recognition', 'Sustainability'],
     },
   },
 }

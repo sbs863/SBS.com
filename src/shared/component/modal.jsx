@@ -8,8 +8,7 @@ import { STATIC_PATH } from '../config'
 const Modal = () =>
 
   <div>
-    <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog"
-         aria-hidden="true" >
+    <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-hidden="true" >
       <div className="modal-dialog" role="document" >
         <div className="modal-content" >
           <div className="close-modal" data-dismiss="modal" >
