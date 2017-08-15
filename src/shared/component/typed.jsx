@@ -4,8 +4,8 @@ import React from 'react'
 import Typist from 'react-typist'
 
 const Typed = () =>
-  <Typist >
-       Hello World!
+  <Typist className="container">
+           Hello world and welcome! Feel free to poke around.
   </Typist>
 
 export default Typed

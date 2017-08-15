@@ -8,7 +8,7 @@ const title = 'About Me'
 
 const styles = {
   summary: {
-    fontSize: '2vw',
+    fontSize: '1.50vw',
     display: 'flex',
     flexDirection: 'end',
   },
@@ -31,9 +31,8 @@ const HelloPage = ({ classes }: { classes: Object }) =>
           I&#39;m no exception. I&#39;ll try to keep this brief so that you have more time to
           explore this space. I graduated in 2013 from UT Austin with a BS in Environmental Science
           and Sustainability. After a couple years in a comfortable yet dead end job, I decided to
-          embark on the road to becoming a full stack web developer. I&#39;m excactly two weeks in,
-          so please excuse the lack of content. Keep your eye on this page, it&#39;s sure to update
-          regularly!
+          embark on the road to becoming a full stack web developer. I&#39;m in the middle of adding
+          content so please check back soon it&#39;s sure to update!
         </p>
       </div>
     </div>
