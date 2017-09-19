@@ -66,7 +66,7 @@ const Portfolio = ({ classes }: { classes: Object }) =>
           (es2015) stack. Node supplies the backend while React/Redux/React Router provide the front
           end. I also utilized Digital Ocean to setup an Ubuntu server to host it, and installed a
           ssl
-          certificate with Letsencrypt. Unfortunately at the moment I am in the process of
+          certificate with LetsEncrypt. Unfortunately at the moment I am in the process of
           refactoring this particular page. Please refer to my Github for a look at my other
           projects</h5>
       </div>
